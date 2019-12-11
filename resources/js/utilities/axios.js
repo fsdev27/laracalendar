@@ -6,7 +6,7 @@ import axios from 'axios'
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 export default axios.create({
-  baseURL: process.env.MIX_APP_URL ? `${process.env.MIX_APP_URL}/api/` : 'http://localhost/api',
+  baseURL: `${process.env.MIX_APP_URL}/api/`,
   headers: {
     common: {
       'X-Requested-With': 'XMLHttpRequest'
