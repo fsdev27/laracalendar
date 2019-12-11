@@ -1,0 +1,79 @@
+// variables
+$body-background-color: whitesmoke;
+$body-size: 16px;
+$body-min-width: 300px;
+$body-rendering: optimizeLegibility;
+$body-family: $family-font-default;
+$body-overflow-x: hidden;
+$body-overflow-y: scroll;
+$body-color: $color-text;
+$body-font-size: 1em;
+$body-weight: 400;
+$body-line-height: 1.5;
+
+// start hacking
+html {
+  background-color: $body-background-color;
+  font-size: $body-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: $body-min-width;
+  overflow-x: $body-overflow-x;
+  overflow-y: $body-overflow-y;
+  text-rendering: $body-rendering;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $body-family;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+}
+
+body {
+  color: $body-color;
+  font-size: $body-font-size;
+  font-weight: $body-weight;
+  line-height: $body-line-height;
+  letter-spacing: 0.04em;
+}
+
+a {
+  color: $color-primary;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-title;
+  text-transform: capitalize;
+}
+
+.section {
+  padding: 1.5rem 0;
+}

@@ -1,0 +1,11 @@
+// card style
+.card {
+  display: block;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.10);
+  border-radius: 4px;
+  .card-body {
+    padding: 1.5rem;
+  }
+}
